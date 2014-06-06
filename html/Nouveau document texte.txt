@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Search</title>
+        <meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" />
+		<script src="js/SplashGameOver.js"></script>
+		<script src="js/SplashMenu.js"></script>
+		<script src="js/SplashStartGame.js"></script>
+	</head>
+	<body >
+		<div id="MenuState">
+		
+			
+		</div>
+		<div id="GameState">
+
+			
+		</div>
+		<div id="EndState">
+		
+			
+		</div>
+
+		<div id="bomb">
+
+		</div>
+
+		<div id="roger">
+
+		</div>
+	</body>
+</html>

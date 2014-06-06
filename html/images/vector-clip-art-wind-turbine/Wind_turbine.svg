@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="498.06546"
+   height="1019.8651"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47pre4 r22446"
+   sodipodi:docname="turbinesilhouette.svg"
+   inkscape:export-filename="/home/ginger/art/dailyillustration/turbinesilhouette.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective2920"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.4751216"
+     inkscape:cx="252.48297"
+     inkscape:cy="515.59827"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="746"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-119.56427,-21.914287)">
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:1.5653187px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 412.08029,1040.9967 c -2.92384,-234.48343 -4.72789,-469.08411 -8.35149,-703.49426 -3.88368,-16.20185 -3.84296,-39.10636 -21.69151,-45.20907 -21.23282,11.2171 -43.19412,-7.88933 -64.08306,-12.38305 -52.47064,-17.20797 -107.74304,-23.7853 -161.10541,-37.81427 -13.37784,-0.39219 -24.50168,-7.31197 -36.50189,-12.26051 5.89963,-10.46097 25.86839,1.38111 37.3413,-0.0369 71.29236,8.38375 142.10076,20.9124 213.07969,30.87052 11.44968,-2.69211 22.87525,-10.72133 35.01243,-11.09337 8.02881,-11.36623 8.94965,-27.61003 22.1064,-35.90357 36.65355,-36.88921 74.72934,-72.33187 109.00167,-111.52361 25.70629,-27.472279 51.37011,-54.96372 79.95866,-79.451664 -0.19857,10.691829 -15.24801,20.794058 -20.9925,31.331863 -33.70255,45.015575 -73.89531,84.475501 -110.452,127.092671 -22.48071,25.0498 -45.95112,50.04007 -65.41623,77.17586 5.73973,9.76157 18.75294,21.37053 13.48929,35.10138 -4.76413,12.15152 1.12766,26.68923 -1.57413,40.47156 -1.2786,41.63932 12.75979,81.61316 16.52087,122.87001 6.27707,35.55703 15.61805,71.21872 16.11774,107.3627 -3.85347,18.3985 -10.27429,-14.69314 -11.86566,-21.93733 -8.88715,-33.65419 -14.0997,-68.3245 -25.57266,-101.23848 6.58838,198.70547 13.17676,397.41095 19.76514,596.11642 -11.59555,1.3177 -23.1911,2.6354 -34.78665,3.9531 z"
+       id="path2926" />
+  </g>
+</svg>

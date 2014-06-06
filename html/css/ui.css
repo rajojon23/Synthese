@@ -1,0 +1,39 @@
+#lifebar{
+	position:absolute;
+	left:15px;
+	top:20px;
+	width:50px;
+	height:10px;
+	background:white;
+	-webkit-transition:width 500ms
+}
+
+#score{
+	position:absolute;
+	left:15px;
+	top:30px;
+	color:white;
+	-webkit-transition:width 500ms
+}
+#lightning{
+	position:absolute;
+	left:15px;
+	top:70px;
+	color:white;
+	-webkit-transition:width 500ms
+}
+#lightning-embed{
+	position:absolute;
+	left:50px;
+	top:70px;
+	color:white;
+	-webkit-transition:width 500ms
+}
+#lightning-object{
+	position:absolute;
+	left:100px;
+	top:70px;
+	fill:"white";
+	-webkit-transition:width 500ms
+}
+

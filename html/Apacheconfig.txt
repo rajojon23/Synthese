@@ -1,0 +1,14 @@
+# modification effectuer par Brigitte le 9-2-2010
+Listen 127.0.0.1:82
+ 
+<VirtualHost *:82>
+	ServerName localhost
+	DocumentRoot "D:\Synthese\html"
+</VirtualHost>
+
+<Directory "D:\Synthese\html">
+    Options Indexes +FollowSymLinks
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+</Directory>

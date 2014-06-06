@@ -1,0 +1,795 @@
+
+@font-face {
+    font-family: 'Broken'; /*a name to be used later*/
+    src: url("../font/BrokenGlass.ttf"); /*URL to font*/
+}
+#menu-home{
+	/*display:none;*/
+	position:absolute;
+	top:10px;
+	left:10px;
+	/*http://www.wallsave.com/wallpapers/1920x1080/buddha/253423/buddha-neon-lights-redcube-screentreats-iphone-and-high-definition-253423.jpg*/
+	background-image: url('../images/wall.jpg');
+	width:800px; 
+	height:300px;
+	color:red;
+}
+#menu-pause{
+	display:none;
+	position:absolute;
+	top:10px;
+	left:10px;
+	background-color: black;
+	width:800px; 
+	height:300px;
+	color:red;
+}
+#menu-gameover{
+	display: none;
+
+	position:absolute;
+	top:10px;
+	left:10px;
+	background-color: black;
+	width:800px; 
+	height:300px;
+	color:red;
+	font-family: 'Broken';
+}
+#menu-home .text-start{
+	position:absolute;
+	top:80px;
+	left:370px;
+	font-size:250%;
+}
+#menu-home .text-high{
+	position:absolute;
+	top:120px;
+	left:320px;
+	font-size:250%;
+
+}
+
+#menu-pause .text-pause{
+	position:absolute;
+	top:80px;
+	left:370px;
+	font-size:250%;
+}
+
+#menu-pause .text-desc{
+
+	position:absolute;
+	top:120px;
+	left:320px;
+
+}
+
+#menu-gameover .text-gameover{
+	position:absolute;
+	top:80px;
+	left:320px;
+	font-size:500%;
+}
+
+#start:hover,#scoreboard:hover{
+	color:black;
+	background-color: white;
+	cursor: pointer;
+}
+#gx{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:20px;
+	height:20px;
+	background-color:red;
+/*	background: url('../images/hero.png') -89px -102px  ;
+	-180px 58px; 
+	-webkit-animation: animate-walk .5s steps(6) infinite;*/
+}
+@-webkit-keyframes animate-walk {  
+    0% {background-position: -554px -102px; }
+    100% {background-position: 0 -102px;}
+}
+#text{
+	position:absolute;
+	left: 350px;
+	top:100px;
+	color:black;
+	text-align: center;
+	width:auto;
+	height:auto;
+}
+#ennemy{
+	position:absolute;
+	width:16px;
+	height:16px;
+	background-color:blue;
+}
+#bullet{
+	position:absolute;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet0{
+	position:absolute;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet1{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet2{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet3{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet4{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet5{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet6{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet7{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet8{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet9{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet10{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet11{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet12{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet13{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet14{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet15{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet16{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet17{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet18{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet19{
+	position:absolute;
+	left: 100px;
+	top:290px;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet20{
+	position:absolute;
+	width:10px;
+	height:10px;
+	background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; 
+}
+#bullet21{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet22{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet23{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet24{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet25{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet26{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet27{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet28{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet29{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet30{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet31{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet32{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet33{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet34{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet35{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet36{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet37{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet38{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet39{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet40{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet41{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet42{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet43{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet44{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet45{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet46{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet47{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet48{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet49{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet50{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet51{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet52{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet53{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet54{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet55{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet56{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet57{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet58{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet59{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet60{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet61{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet62{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet63{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet64{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet65{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet66{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet67{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet68{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet69{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet70{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet71{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet72{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet73{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet74{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet75{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet76{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet77{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet78{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet79{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet80{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet81{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet82{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet83{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet84{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet85{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet86{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet87{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet88{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet89{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet90{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet91{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet92{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet93{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet94{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet95{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet96{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet97{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet98{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet99{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet100{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet101{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet102{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet103{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet104{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet105{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet106{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet107{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet108{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet109{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet110{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet111{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet112{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet113{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet114{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet115{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet116{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet117{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet118{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet119{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet120{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet121{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet122{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet123{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet124{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet125{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet126{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet127{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet128{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet129{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet130{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet131{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet132{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet133{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet134{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet135{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet136{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet137{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet138{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet139{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet140{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet141{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet142{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet143{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet144{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet145{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet146{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet147{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet148{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet149{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet150{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet151{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet152{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet153{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet154{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet155{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet156{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet157{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet158{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet159{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet160{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet161{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet162{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet163{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet164{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet165{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet166{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet167{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet168{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet169{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet170{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet171{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet172{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet173{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet174{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet175{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet176{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet177{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet178{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet179{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet180{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet181{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet182{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet183{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet184{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet185{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet186{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet187{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet188{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet189{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet190{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet191{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet192{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet193{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet194{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet195{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet196{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet197{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet198{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet199{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet200{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet201{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet202{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet203{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet204{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet205{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet206{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet207{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet208{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet209{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet210{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet211{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet212{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet213{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet214{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet215{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet216{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet217{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet218{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet219{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet220{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet221{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet222{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet223{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet224{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet225{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet226{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet227{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet228{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet229{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet230{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet231{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet232{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet233{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet234{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet235{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet236{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet237{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet238{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet239{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet240{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet241{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet242{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet243{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet244{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet245{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet246{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet247{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet248{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet249{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet250{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet251{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet252{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet253{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet254{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet255{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet256{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet257{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet258{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet259{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet260{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet261{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet262{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet263{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet264{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet265{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet266{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet267{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet268{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet269{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet270{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet271{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet272{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet273{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet274{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet275{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet276{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet277{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet278{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet279{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet280{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet281{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet282{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet283{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet284{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet285{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet286{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet287{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet288{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet289{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet290{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet291{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet292{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet293{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet294{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet295{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet296{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet297{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet298{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#bullet299{position:absolute;width:10px;height:10px;background-color:orange;box-shadow: 0px 0px 5px orange;border-radius: 50%; }
+#Enemy2{
+	position:absolute;
+	width:16px;
+	height:16px;
+	background-color:green;
+}
+#Enemy1{
+	position:absolute;
+	width:16px;
+	height:16px;
+	background-color:grey;
+	/*background-image:url(lightning.svg);*/
+}
+#Enemy3{
+	position:absolute;
+	width:16px;
+	height:16px;
+	background-color:yellow;
+}
+#Enemy4{
+	position:absolute;
+	width:16px;
+	height:16px;
+	background-color:yellow;
+}
+#Enemy5{
+	position:absolute;
+	width:16px;
+	height:16px;
+	background-color:green;
+}
+#Enemy6{
+	position:absolute;
+	width:16px;
+	height:16px;
+	background-color:grey;
+}
+
+#Enemy7{
+	position:absolute;
+	width:16px;
+	height:16px;
+	background-color:blue;
+}
+#Enemy8{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy9{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy10{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy11{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy12{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy13{position:absolute;width:16px;height:16px;background-color:yellow;}
+#Enemy14{position:absolute;width:16px;height:16px;background-color:yellow;}
+#Enemy15{position:absolute;width:16px;height:16px;background-color:yellow;}
+#Enemy16{position:absolute;width:16px;height:16px;background-color:yellow;}
+#Enemy17{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy18{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy19{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy20{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy21{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy22{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy23{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy24{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy25{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy26{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy27{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy28{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy29{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy30{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy31{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy32{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy33{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy34{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy35{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy36{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy37{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy38{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy39{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy40{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy41{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy42{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy43{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy44{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy45{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy46{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy47{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy48{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy49{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy50{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy51{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy52{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy53{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy54{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy55{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy56{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy57{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy58{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy59{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy60{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy61{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy62{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy63{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy64{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy65{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy66{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy67{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy68{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy69{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy70{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy71{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy72{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy73{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy74{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy75{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy76{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy77{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy78{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy79{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy80{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy81{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy82{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy83{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy84{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy85{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy86{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy87{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy88{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy89{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy90{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy91{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy92{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy93{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy94{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy95{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy96{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy97{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy98{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy99{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy100{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy101{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy102{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy103{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy104{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy105{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy106{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy107{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy108{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy109{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy110{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy111{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy112{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy113{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy114{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy115{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy116{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy117{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy118{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy119{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy120{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy121{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy122{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy123{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy124{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy125{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy126{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy127{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy128{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy129{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy130{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy131{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy132{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy133{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy134{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy135{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy136{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy137{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy138{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy139{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy140{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy141{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy142{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy143{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy144{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy145{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy146{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy147{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy148{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy149{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy150{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy151{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy152{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy153{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy154{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy155{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy156{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy157{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy158{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy159{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy160{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy161{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy162{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy163{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy164{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy165{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy166{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy167{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy168{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy169{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy170{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy171{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy172{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy173{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy174{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy175{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy176{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy177{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy178{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy179{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy180{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy181{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy182{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy183{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy184{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy185{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy186{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy187{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy188{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy189{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy190{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy191{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy192{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy193{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy194{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy195{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy196{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy197{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy198{position:absolute;width:16px;height:16px;background-color:blue;}
+#Enemy199{position:absolute;width:16px;height:16px;background-color:blue;}
+

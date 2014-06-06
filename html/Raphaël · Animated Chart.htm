@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://raphaeljs.com/chart.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Raphaël · Animated Chart</title>
+        <link rel="stylesheet" href="http://raphaeljs.com/demo.css" media="screen">
+        <link rel="stylesheet" href="http://raphaeljs.com/demo-print.css" media="print">
+        <style media="screen">
+            #holder {
+                height: 230px;
+                margin: -115px 0 0 -310px;
+                width: 620px;
+            }
+        </style>
+        <script src="./Raphaël · Animated Chart_files/raphael.js"></script><style type="text/css"></style>
+        <script>
+            Raphael(function () {
+                var r = Raphael("holder", 620, 250),
+                    e = [],
+                    clr = [],
+                    months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+                    values = [],
+                    now = 0,
+                    month = r.text(310, 27, months[now]).attr({fill: "#fff", stroke: "none", "font": '100 18px "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif'}),
+                    rightc = r.circle(364, 27, 10).attr({fill: "#fff", stroke: "none"}),
+                    right = r.path("M360,22l10,5 -10,5z").attr({fill: "#000"}),
+                    leftc = r.circle(256, 27, 10).attr({fill: "#fff", stroke: "none"}),
+                    left = r.path("M260,22l-10,5 10,5z").attr({fill: "#000"}),
+                    c = r.path("M0,0").attr({fill: "none", "stroke-width": 4, "stroke-linecap": "round"}),
+                    bg = r.path("M0,0").attr({stroke: "none", opacity: .3}),
+                    dotsy = [];
+                function randomPath(length, j) {
+                    var path = "",
+                        x = 10,
+                        y = 0;
+                    dotsy[j] = dotsy[j] || [];
+                    for (var i = 0; i < length; i++) {
+                        dotsy[j][i] = Math.round(Math.random() * 200);
+                        // if (i) {
+                        //     path += "C" + [x + 10, y, (x += 20) - 10, (y = 240 - dotsy[j][i]), x, y];
+                        // } else {
+                        //     path += "M" + [10, (y = 240 - dotsy[j][i])];
+                        // }
+                        if (i) {
+                            x += 20;
+                            y = 240 - dotsy[j][i];
+                            path += "," + [x, y];
+                        } else {
+                            path += "M" + [10, (y = 240 - dotsy[j][i])] + "R";
+                        }
+                    }
+                    return path;
+                }
+                for (var i = 0; i < 12; i++) {
+                    values[i] = randomPath(30, i);
+                    clr[i] = Raphael.getColor(1);
+                }
+                c.attr({path: values[0], stroke: clr[0]});
+                bg.attr({path: values[0] + "L590,250 10,250z", fill: clr[0]});
+                var animation = function () {
+                    var time = 500;
+                    if (now == 12) {
+                        now = 0;
+                    }
+                    if (now == -1) {
+                        now = 11;
+                    }
+                    var anim = Raphael.animation({path: values[now], stroke: clr[now]}, time, "<>");
+                    c.animate(anim);
+                    bg.animateWith(c, anim, {path: values[now] + "L590,250 10,250z", fill: clr[now]}, time, "<>");
+                    month.attr({text: months[now]});
+                };
+                var next = function () {
+                        now++;
+                        animation();
+                    },
+                    prev = function () {
+                        now--;
+                        animation();
+                    };
+                rightc.click(next);
+                right.click(next);
+                leftc.click(prev);
+                left.click(prev);
+            });
+        </script>
+    </head>
+    <body>
+        <div id="holder"><svg height="250" version="1.1" width="620" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="310" y="27" text-anchor="middle" font="100 18px &quot;Helvetica Neue&quot;, Helvetica, &quot;Arial Unicode MS&quot;, Arial, sans-serif" stroke="none" fill="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: 100; font-size: 18px; line-height: normal; font-family: &#39;Helvetica Neue&#39;, Helvetica, &#39;Arial Unicode MS&#39;, Arial, sans-serif;"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="6.5">April</tspan></text><circle cx="364" cy="27" r="10" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#000000" stroke="#000000" d="M360,22L370,27L360,32Z" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="256" cy="27" r="10" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#000000" stroke="#000000" d="M260,22L250,27L260,32Z" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#a5ff00" d="M10,220C13.333333333333334,218,23.333333333333332,220,30,208C36.666666666666664,196,43.333333333333336,172,50,148C56.666666666666664,124,63.333333333333336,78.33333333333333,70,64C76.66666666666667,49.666666666666664,83.33333333333333,35.333333333333336,90,62C96.66666666666667,88.66666666666667,103.33333333333333,216.83333333333334,110,224C116.66666666666667,231.16666666666666,123.33333333333333,118.16666666666667,130,105C136.66666666666666,91.83333333333333,143.33333333333334,151.5,150,145C156.66666666666666,138.5,163.33333333333334,65.5,170,66C176.66666666666666,66.5,183.33333333333334,121.5,190,148C196.66666666666666,174.5,203.33333333333334,209.66666666666666,210,225C216.66666666666666,240.33333333333334,223.33333333333334,238.66666666666666,230,240C236.66666666666666,241.33333333333334,243.33333333333334,244.66666666666666,250,233C256.6666666666667,221.33333333333334,263.3333333333333,195.33333333333334,270,170C276.6666666666667,144.66666666666666,283.3333333333333,74.83333333333333,290,81C296.6666666666667,87.16666666666667,303.3333333333333,207,310,207C316.6666666666667,207,323.3333333333333,88,330,81C336.6666666666667,74,343.3333333333333,144.5,350,165C356.6666666666667,185.5,363.3333333333333,220,370,204C376.6666666666667,188,383.3333333333333,72.16666666666667,390,69C396.6666666666667,65.83333333333333,403.3333333333333,189,410,185C416.6666666666667,181,423.3333333333333,50.166666666666664,430,45C436.6666666666667,39.833333333333336,443.3333333333333,132.5,450,154C456.6666666666667,175.5,463.3333333333333,183,470,174C476.6666666666667,165,483.3333333333333,97,490,100C496.6666666666667,103,503.3333333333333,198.66666666666666,510,192C516.6666666666666,185.33333333333334,523.3333333333334,73.16666666666667,530,60C536.6666666666666,46.833333333333336,543.3333333333334,114.5,550,113C556.6666666666666,111.5,563.3333333333334,32.833333333333336,570,51C576.6666666666666,69.16666666666667,586.6666666666666,193.5,590,222" stroke-width="4" stroke-linecap="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linecap: round;"></path><path fill="#a5ff00" stroke="none" d="M10,220C13.333333333333334,218,23.333333333333332,220,30,208C36.666666666666664,196,43.333333333333336,172,50,148C56.666666666666664,124,63.333333333333336,78.33333333333333,70,64C76.66666666666667,49.666666666666664,83.33333333333333,35.333333333333336,90,62C96.66666666666667,88.66666666666667,103.33333333333333,216.83333333333334,110,224C116.66666666666667,231.16666666666666,123.33333333333333,118.16666666666667,130,105C136.66666666666666,91.83333333333333,143.33333333333334,151.5,150,145C156.66666666666666,138.5,163.33333333333334,65.5,170,66C176.66666666666666,66.5,183.33333333333334,121.5,190,148C196.66666666666666,174.5,203.33333333333334,209.66666666666666,210,225C216.66666666666666,240.33333333333334,223.33333333333334,238.66666666666666,230,240C236.66666666666666,241.33333333333334,243.33333333333334,244.66666666666666,250,233C256.6666666666667,221.33333333333334,263.3333333333333,195.33333333333334,270,170C276.6666666666667,144.66666666666666,283.3333333333333,74.83333333333333,290,81C296.6666666666667,87.16666666666667,303.3333333333333,207,310,207C316.6666666666667,207,323.3333333333333,88,330,81C336.6666666666667,74,343.3333333333333,144.5,350,165C356.6666666666667,185.5,363.3333333333333,220,370,204C376.6666666666667,188,383.3333333333333,72.16666666666667,390,69C396.6666666666667,65.83333333333333,403.3333333333333,189,410,185C416.6666666666667,181,423.3333333333333,50.166666666666664,430,45C436.6666666666667,39.833333333333336,443.3333333333333,132.5,450,154C456.6666666666667,175.5,463.3333333333333,183,470,174C476.6666666666667,165,483.3333333333333,97,490,100C496.6666666666667,103,503.3333333333333,198.66666666666666,510,192C516.6666666666666,185.33333333333334,523.3333333333334,73.16666666666667,530,60C536.6666666666666,46.833333333333336,543.3333333333334,114.5,550,113C556.6666666666666,111.5,563.3333333333334,32.833333333333336,570,51C576.6666666666666,69.16666666666667,586.6666666666666,193.5,590,222L590,250L10,250Z" opacity="0.3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.3;"></path></svg></div>
+        <p id="copy">Demo of <a href="http://raphaeljs.com/">Raphaël</a>—JavaScript Vector Library</p>
+    
+</body></html>
